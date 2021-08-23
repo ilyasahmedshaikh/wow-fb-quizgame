@@ -32,5 +32,37 @@ header {
         }
       }
     }
+    .languages {
+      background: #f1f1f1;
+      width: 100%;
+      position: absolute;
+      margin-top: 610px;
+      ul {
+        padding-left: 0px;
+        list-style: none;
+        margin: auto;
+        max-height: 83vh;
+        overflow-y: auto;
+        li {
+          padding: 10px;
+          a {
+            display: flex;
+            align-items: center;
+            img {
+              width: 35px;
+              height: auto;
+              object-fit: cover;
+              object-position: center;
+            }
+            span {
+              color: black;
+              font-size: 20px;
+              padding-left: 12px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
   }
 }

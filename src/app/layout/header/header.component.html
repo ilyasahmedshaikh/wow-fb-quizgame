@@ -5,7 +5,12 @@
         <div class="header-bar">
           <a href="#"><img class="home-icon" src="assets/img/home-icon.png" alt="icon"></a>
           <a><img class="logo" src="assets/img/logo.png" alt="logo"></a>
-          <a><img class="flag" src="assets/img/l1.png" alt="flags"></a>
+          <a (click)="onDropdownClick()"><img class="flag" src="assets/img/l1.png" alt="flags"></a>
+          <div class="languages">
+            <ul *ngIf="isOpen">
+              <li (click)="onDropdownClick()" *ngFor="let item of flag"><a><img src="{{item.image}}"><span>{{item.name}}</span></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
