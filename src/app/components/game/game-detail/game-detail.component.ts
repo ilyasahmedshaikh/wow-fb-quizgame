@@ -73,6 +73,10 @@ export class GameDetailComponent implements OnInit {
     this.data = this.router.getCurrentNavigation().extras.state;
   }
 
+  onGameClick(item) {
+    this.router.navigate(['/game/game-detail'], { state: item })
+  }
+
   ngOnInit(): void {
     console.log(this.data)
   }
