@@ -1,1 +1,10 @@
-<p>game-listing works!</p>
+<div class="game-listing-screen">
+  <div class="container">
+    <div class="games" *ngFor="let item of gameList" (click)="onGameClick(item)">
+      <div class="card" style="background-image: url({{item.image}});">
+        <p>{{item.points}}</p>
+        <h6>{{item.name}}</h6>
+      </div>
+    </div>
+  </div>
+</div>
