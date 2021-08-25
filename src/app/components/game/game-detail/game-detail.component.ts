@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class GameDetailComponent implements OnInit {
 
+  isLoading: boolean = false;
   data: any;
 
   gameList: any = [
@@ -78,6 +79,9 @@ export class GameDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.isLoading = !this.isLoading;
+    }, 2500);
     console.log(this.data)
   }
 

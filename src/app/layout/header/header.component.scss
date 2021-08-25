@@ -5,7 +5,7 @@ header {
   padding: 13px 0;
   z-index: 2;
   position: fixed;
-  width: 100%;
+  width: 414px;
   .header-bar {
     display: flex;
     align-items: center;
@@ -13,12 +13,14 @@ header {
     a {
       img {
         &.home-icon {
+          cursor: pointer;
           width: 32px;
           height: auto;
           object-fit: cover;
           object-position: center;
         }
         &.flag {
+          cursor: pointer;
           width: 50px;
           height: auto;
           object-fit: cover;
@@ -36,7 +38,8 @@ header {
       background: #f1f1f1;
       width: 100%;
       position: absolute;
-      margin-top: 610px;
+      top: 48px;
+      left: 0;
       ul {
         padding-left: 0px;
         list-style: none;
@@ -46,6 +49,7 @@ header {
         li {
           padding: 10px;
           a {
+            cursor: pointer;
             display: flex;
             align-items: center;
             img {
@@ -64,5 +68,11 @@ header {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  header {
+    width: 100%;
   }
 }

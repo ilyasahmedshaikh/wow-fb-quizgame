@@ -1,4 +1,18 @@
-.main-header-space {
-  background: black;
-  padding: 60px 0 30px 0;
+.app {
+  width: 414px;
+  height: 100vh;
+  display: block;
+  margin: auto;
+  .main-header-space {
+    background: black;
+    padding: 60px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .app {
+    width: 100%;
+    height: auto;
+    display: unset;
+  }
 }
